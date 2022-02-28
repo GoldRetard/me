@@ -3,22 +3,33 @@
   <head>
     <meta charset="utf-8">
     <title>Связаться - YouGro</title>
-<link rel="stylesheet" type="text/css" href="//p23.zdassets.com/hc/theming_assets/678183/96508/style.css?digest=4468957810711">
-<link rel="stylesheet" media="all" href="//static.zdassets.com/hc/assets/application-eee6d8d7fa05e7e79d4f3bfce1e548f7.css" id="stylesheet">
+    <link rel="stylesheet" media="all" href="//static.zdassets.com/hc/assets/application-eee6d8d7fa05e7e79d4f3bfce1e548f7.css" id="stylesheet" />
+      <link rel="stylesheet" type="text/css" href="//p23.zdassets.com/hc/theming_assets/678183/96508/style.css?digest=4468957810711">
   </head>
   <body>
     <div class="container">
       <h1>Обратная связь</h1>
-      <form>
+      <form name="contact" id="contact">
         <select name="title" id="title">
+          <option disabled selected>-</option>
           <option name="bug" id="bug">Сообщить об ошибке</option>
-          <option name="suggest" id="suggest">Предложение</option>
+          <option name="suggest" id="suggest" action>Предложение</option>
           <option name="help" id="help">Помощь</option>
         </select>
+        <div id="request_anonymous_requester_email_error" class="notification notification-error notification-inline"></div>
+        <input type="text" name="name" id="name" class="name" placeholder="имя">
+        <div id="request_anonymous_requester_email_error" class="notification notification-error notification-inline"></div>
+        <input type="email" name="email" id="email" class="email" placeholder="контактная почта">
+        <div id="request_anonymous_requester_email_error" class="notification notification-error notification-inline"></div>
+        <input type="text" name="message" id="message" class="message" placeholder="сообщение">
+        <div id="request_anonymous_requester_email_error" class="notification notification-error notification-inline"></div>
       </form>
-      <button type="submit" id="traa">Продолжить</button>
+      <button type="submit" id="button" formaction="file:///C:/Users/Home/github/syte/req/reqjs/main.js">Продолжить</button>
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="reqjs/main.js"></script>
+    <script>
+
+    </script>
   </body>
 </html>

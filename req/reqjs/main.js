@@ -1,15 +1,20 @@
-$("bug").on("click", function () {
-  window.location.href = "/bug/";
-});
+$("button").on("click", function() {
+  var title = $("#title").val();
+  var name = $("#name").val().trim();
+  var email = $("#email").val().trim();
+  var message = $("#message").val().trim();
 
-$("suggest").on("click", function () {
-  window.location.href = "/suggest/";
-});
-
-$("help").on("click", function () {
-  window.location.href = "/help/";
-});
-
-$("traa").on("click", function () {
-  window.location.href = "/help/index.html";
+  if (title == "") {
+    $("#request_anonymous_requester_email_error").text("Инициатор: Тема: поле не может быть пустым");
+    return false;
+  } else if (name == "") {
+    $("#request_anonymous_requester_email_error").text("Инициатор: Имя: поле не может быть пустым");
+    return false;
+  } else if (email = "") {
+    $("#request_anonymous_requester_email_error").text("Инициатор: Тема: поле не может быть пустым");
+    return false;
+  } else if (message = "") {
+    $("#request_anonymous_requester_email_error").text("Инициатор: Тема: поле не может быть пустым");
+    return false;
+  }
 });
