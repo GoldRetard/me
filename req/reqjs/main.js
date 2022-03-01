@@ -20,6 +20,7 @@ if (title = "") {
 
   $("#request_anonymous_requester_email_error").text("");
 
+  /*
   $.ajax({
     url: 'php/main.php',
     type: 'POST',
@@ -34,4 +35,5 @@ if (title = "") {
       $("#button").prop("disabled", false);
     }
   })
+  */
 });
